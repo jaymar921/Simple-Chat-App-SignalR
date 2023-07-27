@@ -1,0 +1,74 @@
+:root{
+    --primaryBg : #212016
+}
+body{
+    margin: 0;
+    background-color: var(--primaryBg);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user{
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+    border-bottom: 2px solid grey;
+}
+
+.user input,
+.messagebox input{
+    position: relative;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    
+    outline: none;
+    color: white;
+    font-weight: 700;
+}
+
+.chatbox{
+    position: relative;
+    height: 89vh;
+    overflow-y: scroll;
+}
+
+.chatbox div{
+    position: relative;
+    background-color: rgb(68, 63, 56);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.chatbox div h3,
+.chatbox div p{
+    margin: 0;
+}
+
+.chatbox div p{
+    margin-top: 5px;
+}
+
+.messagebox{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 30px;
+    border-top: 2px solid grey;
+}
+
+.messagebox input{
+    font-weight: 500;
+    padding: 20px;
+}
+
+.messagebox button{
+    position: absolute;
+    font-weight: 500;
+    font-size: 30px;
+    height: 100%;
+    right: 0;
+    cursor: pointer;
+}
